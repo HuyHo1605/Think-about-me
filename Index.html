@@ -10,67 +10,114 @@
 
   gtag('config', 'G-PT5GMKJSC6');
 </script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </head>
 <body>
     <link rel="stylesheet" href="DunDun.css">
     </link>
+  <br>
     <center>
         <h1>
             What do you think about me ?
         </h1>
     </center>
+  </br>
+  <br>
     <center>
         <label for="antuongdautien">
             Ấn tượng đầu tiên:
         </label>
-    <textarea id="antuongdautien" name="antuongdautien" rows="4" cols="50">
+        <div class = "col-8">
+    <textarea class="form-control" id="antuongdautien" name="antuongdautien" rows="4" cols="50">
     </textarea>
+        </div>
     </center>
+  </br>
+  <br>
     <center>
         <label for="bancothayminhtucaokhoekhoangkhong">
             Bạn có thấy mình tự cao, khoe khoang không?:
         </label>
-    <textarea id="bancothayminhtucaokhoekhoangkhong" name="bancothayminhtucaokhoekhoangkhong" rows="4" cols="50">
+        <div class = "col-8">
+    <textarea class="form-control" id="bancothayminhtucaokhoekhoangkhong" name="bancothayminhtucaokhoekhoangkhong" rows="4" >
     </textarea>
+        </div>
     </center>
+  </br>
+  <br>  
     <center>
         <label for="bancamthayminhlanguoihuongngoaihayhuongnoi">
             Bạn cảm thấy mình người hướng ngoại hay hướng nội?:
         </label>
-    <textarea id="bancamthayminhlanguoihuongngoaihayhuongnoi" name="bancamthayminhlanguoihuongngoaihayhuongnoi" rows="4" cols="50">
+        <div class = "col-8">
+    <textarea class="form-control" id="bancamthayminhlanguoihuongngoaihayhuongnoi" name="bancamthayminhlanguoihuongngoaihayhuongnoi" rows="4" cols="50">
     </textarea>
+        </div>
     </center>
+  </br>
+  <br>
     <center>
         <label for="banthatsuvuikhilambanvoiminh">
             Bạn có thật sự vui khi làm bạn với mình?:
         </label>
-    <textarea id="banthatsuvuikhilambanvoiminh" name="banthatsuvuikhilambanvoiminh" rows="4" cols="50">
+        <div class = "col-8">
+    <textarea class="form-control" id="banthatsuvuikhilambanvoiminh" name="banthatsuvuikhilambanvoiminh" rows="4" cols="50">
     </textarea>
+        </div>
     </center>
+  </br>
+  <br>
     <center>
         <label for="bancothayminhlamotleadertot">
             Bạn có thấy mình là một leader tốt?:
         </label>
-    <textarea id="bancothayminhlamotleadertot" name="bancothayminhlamotleadertot" rows="4" cols="50">
+        <div class = "col-8">
+    <textarea class="form-control" id="bancothayminhlamotleadertot" name="bancothayminhlamotleadertot" rows="4" cols="50">
     </textarea>
+        </div>
     </center>
+  </br>
+  <br>
     <center>
         <label for="bancotungghetminhchuaneucothitaisao">
             Bạn có từng cảm thấy ghét mình chưa? nếu có thì tại sao?:
         </label>
-    <textarea id="bancotungghetminhchuaneucothitaisao" name="bancotungghetminhchuaneucothitaisao" rows="4" cols="50">
+        <div class = "col-8">
+    <textarea class="form-control" id="bancotungghetminhchuaneucothitaisao" name="bancotungghetminhchuaneucothitaisao" rows="4" cols="50">
     </textarea>
+        </div>
     </center>
+  </br>
+  <br>
     <center>
         <label for="bancothayminhbinhatkhong">
             Bạn có thấy mình bị nhạt không:
         </label>
-    <textarea id="bancothayminhbinhatkhong" name="bancothayminhbinhatkhong" rows="4" cols="50">
+        <div class = "col-8">
+    <textarea class="form-control" id="bancothayminhbinhatkhong" name="bancothayminhbinhatkhong" rows="4" cols="50">
     </textarea>
+        </div>
     </center>
-    <button onclick="myFunction()">
+  </br>
+  <br>
+    <center>
+      <label for="noinhanxetthemcamnghi">
+          Nơi nhận xét thêm(nếu có):
+      </label>
+      <div class = "col-8">
+  <textarea class="form-control" id="noinhanxetthemcamnghi(neuco)" name="noinhanxetthemcamnghi(neuco)" rows="4" cols="50">
+  </textarea>
+      </div>
+  </center>
+  </br>
+  <br>
+    <center>
+    <button class="btn btn-primary" onclick="myFunction()">
         submit 
     </button>
+    </center>
+  </br>
     <p id="demo">
     </p>
     <script> 
@@ -78,7 +125,7 @@
             const data = {
                 to:"duchuy1605@gmail.com",
                 subject: "sdfghjkl",
-                message: document.getElementById("antuongdautien").value +"*****"+ document.getElementById("bancothayminhtucaokhoekhoangkhong").value +"*****"+ document.getElementById("bancamthayminhlanguoihuongngoaihayhuongnoi").value +"*****"+ document.getElementById("banthatsuvuikhilambanvoiminh").value +"*****"+ document.getElementById("bancothayminhlamotleadertot").value +"*****"+ document.getElementById("bancotungghetminhchuaneucothitaisao").value +"*****"+ document.getElementById("bancothayminhbinhatkhong").value,
+                message: document.getElementById("antuongdautien").value +"*****"+ document.getElementById("bancothayminhtucaokhoekhoangkhong").value +"*****"+ document.getElementById("bancamthayminhlanguoihuongngoaihayhuongnoi").value +"*****"+ document.getElementById("banthatsuvuikhilambanvoiminh").value +"*****"+ document.getElementById("bancothayminhlamotleadertot").value +"*****"+ document.getElementById("bancotungghetminhchuaneucothitaisao").value +"*****"+ document.getElementById("bancothayminhbinhatkhong").value +"*****"+ document.getElementById("noinhanxetthemcamnghi(neuco)") ,
                 
             };
             const init = {
@@ -87,7 +134,7 @@
             }
             //fetch tu cai link anh moi gui vs method la post va cai body là cái data mới tạo 
             fetch("https://my-api-proxy.vercel.app/api/sendMail" , init)
-        document.getElementById("demo").innerHTML = document.getElementById("antuongdautien").value +"*****"+ document.getElementById("bancothayminhtucaokhoekhoangkhong").value +"*****"+ document.getElementById("bancamthayminhlanguoihuongngoaihayhuongnoi").value +"*****"+ document.getElementById("banthatsuvuikhilambanvoiminh").value +"*****"+ document.getElementById("bancothayminhlamotleadertot").value +"*****"+ document.getElementById("bancotungghetminhchuaneucothitaisao").value +"*****"+ document.getElementById("bancothayminhbinhatkhong").value
+        document.getElementById("demo").innerHTML = document.getElementById("antuongdautien").value +"*****"+ document.getElementById("bancothayminhtucaokhoekhoangkhong").value +"*****"+ document.getElementById("bancamthayminhlanguoihuongngoaihayhuongnoi").value +"*****"+ document.getElementById("banthatsuvuikhilambanvoiminh").value +"*****"+ document.getElementById("bancothayminhlamotleadertot").value +"*****"+ document.getElementById("bancotungghetminhchuaneucothitaisao").value +"*****"+ document.getElementById("bancothayminhbinhatkhong").value+"*****"+ document.getElementById("noinhanxetthemcamnghi(neuco)")
       }
       </script>
       
